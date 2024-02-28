@@ -73,23 +73,24 @@ public class MatrixUI {
     }
 
     public static String existsValueAboveDiagonalUI(boolean flag, int value) {
-        return String.format("The value of %d is%b found above the diagonal",
-                value, flag ? "" : " not");
+        return String.format("The value of %d is%s found above the diagonal.",
+                value, (flag ? "" : " not"));
     }
 
     public static String existsValueBelowDiagonalUI(boolean flag, int value) {
-        return String.format("The value of %d is%b found below the diagonal",
-                value, flag ? "" : " not");
+        return String.format("The value of %d is%s found below the diagonal.",
+                value, (flag ? "" : " not"));
     }
 
     public static String existsValueAboveSecondaryDiagonalUI(boolean flag,
                                                              int value) {
-        return String.format("The value of %d is%b found above the " +
-                        "secondary diagonal", value, flag ? "" : " not");
+        return String.format("The value of %d is%s found above the " +
+                        "secondary diagonal.", value, (flag ? "" : " not"));
     }
 
-    public static String existsValueBelowSecondaryDiagonalUI(boolean flag, int value) {
-        return String.format("The value of %d is%b found below the " +
-                        "secondary diagonal", value, flag ? "" : " not");
+    public static String existsValueBelowSecondaryDiagonalUI(boolean flag,
+                                                             int value) {
+        return String.format("The value of %d is%s found below the " +
+                        "secondary diagonal.", value, (flag ? "" : " not"));
     }
 }
